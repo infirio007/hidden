@@ -1,0 +1,129 @@
+footer {
+    width: 100vw;
+    color: #2196F3;
+    display: flex;
+}
+
+.other {
+    position: relative;
+    width: 50%;
+    height: 67vh;
+    min-height: 300px;
+    max-height: 500px;
+    background: url(../images/equipment.jpg) rgba(0, 0, 0, 0.8) no-repeat;
+    background-size: 100% 100%;
+    background-blend-mode: darken;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.other a {
+    color: white;
+    position: relative;
+    top: 20px;
+    font-size: 2rem;
+}
+
+.form {
+    background-color: #121212;
+    font-family: sans-serif;
+    align-items: center;
+    width: 50%;
+    /* height: 67vh; */
+    min-height: 300px;
+    max-height: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form h1 {
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+.form .text-box, .form button, .form textarea, .form select{
+    width: 90%;
+    margin-top: 20px;
+    color: #f1f1f1;
+}
+
+.text-box label {
+    font-size: .9rem;
+}
+
+.form .text-box input, .form textarea, .form select{
+    background-color: transparent;
+    color: white;
+    font-size: 1.2rem;
+    border: none;
+    border-bottom: 1.5px solid #2196F3;
+    outline: none;
+}
+
+.form select {
+    font-size: auto;
+}
+
+.text-box label {
+    padding: 0;
+}
+
+.form textarea {
+    min-height: 60px;
+}
+
+/* .form textarea::placeholder {
+    color: #2196F3;
+} */
+
+.text-box input{
+    width: 100%;
+    height: 30px;
+    margin: 10px 0;
+}
+
+.form select {
+    background-color: #121212;
+    height: 30px;
+    /* color: #2196F3; */
+}
+
+.form button {
+    width: 170px;
+    color: white;
+    height: 60px;
+    border-radius: 20px;
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    border: none;
+    background-color: blue;
+}
+
+.other h1 {
+    position: absolute;
+    top: 5px;
+}
+
+@media only screen and (max-width: 931px) {
+    footer {
+        flex-direction: column; 
+    }
+    .other {
+        width: 100%;
+        max-height: 300px;
+    }
+    .form {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 315px) {
+    .form h1 {
+        font-size: 1.5rem;
+    }
+    .other a {
+        font-size: 1.6rem;
+    }
+}

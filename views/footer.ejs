@@ -1,0 +1,43 @@
+<footer>
+    <div class="other">
+        <h1 class="heading">Contact us</h1>
+        <a href="mailto:xyz@abc.com">&#9993; xyz@abc.com</a>
+        <a href="tel:8100088333">&#128222; +91-81000 88333</a>
+    </div>
+    <form id="contact-form" action="http://localhost:3000/mail" class="form" method="POST">
+        <h1>Set appointment</h1>
+
+        <div class="text-box">
+            <label for="name" >Name: </label>
+            <input type="text" class="input name" name="name" required>
+        </div>
+
+        <div class="text-box">
+            <label for="name" >PhoneNumber: </label>
+            <input type="tel" name="phone_number" class="input email" required>
+        </div>
+
+        <select id="service" name="service">
+            <option selected disabled>Case Type</option>
+            <option value="Surveillance / Shadowing">Surveillance / Shadowing</option>
+            <!-- <option value="Divorce">Divorce</option> -->
+            <option value="Pre Matrimonial investigation">Pre Matrimonial investigation</option>
+            <option value="Post Marriage / Divorce Investigation">Post Marriage / Divorce Investigation</option>
+            <option value="Adultery/Affair Infidelity Investigation">Adultery/Affair Infidelity Investigation</option>
+            <option value="Fact Finding">Fact Finding</option>
+            <option value="Record Search">Record Search</option>
+            <option value="Land Ownership and Title Investigation">Land Ownership and Title Investigation</option>
+            <option value="Domestic Violence">Domestic Violence</option>
+            <option value="Cell Phone Spyware Detection">Cell Phone Spyware Detection</option>
+            <option value="Computer Spyware Detection">Computer Spyware Detection</option>
+            <option value="Gay Spouse Investigation">Gay Spouse Investigation</option>
+            <option value="Surveillance Detection (Countermeasures)">Surveillance Detection (Countermeasures)</option>
+            <option value="Other Cases">Other Cases</option>
+        
+        </select>
+
+        <textarea name="details" placeholder="Enter your details (Optional)."></textarea>
+
+        <button type="submit">Submit</button>
+    </form>
+</footer>
