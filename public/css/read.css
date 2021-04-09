@@ -1,9 +1,11 @@
 .read-header {
     width: 100vw;
-    height: 70vh;
-    max-height: 450px;
+    background: url(/images/read.jpg) rgba(0, 0, 0, 0.8) no-repeat;
+    background-size: 100% 100%;
+    background-blend-mode: darken;
+    height: 80vh;
+    max-height: 500px;
     min-height: 300px;
-    background: #333;
     display: grid;
     place-items: center;
 }
@@ -24,6 +26,8 @@
 
 .details p {
     color: #eee;
+    line-height: 30px;
+    font-size: 18px;
     width: 90vw;
-    max-width: 70ch;
+    max-width: 65ch;
 }

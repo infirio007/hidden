@@ -12,12 +12,18 @@
 <body>
     <%- include('nav'); -%>
     <div class="read-header">
-        <h1 class="heading"><%= details.title %> </h1>
+        <h1 class="heading"><%= details.title %></h1>
     </div>
     <div class="details">
         <img src="/images/<%= details.src %>" alt="">
-        <p><%= details.para %> </p>
+        <p id="para"></p>
     </div>
+    <script>
+        const para = document.querySelector("#para");
+        const arr = "<%= details.para %>".split("/nl");
+        const new_string = arr.join("<br />");
+        para.innerHTML = new_string;
+    </script>
     <%- include('footer'); -%>
 </body>
 </html>
